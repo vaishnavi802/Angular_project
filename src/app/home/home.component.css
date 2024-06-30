@@ -1,0 +1,92 @@
+.home-container{
+    display: flex;
+    .all-movies{
+        width:75%;
+        border-right:2px solid #02e2cf;
+        min-height:100vh;
+        /* height:calc(100%-80px); */
+        padding:20px 40px;
+        font-family:'Roboto', sans-serif;
+        .top{
+            display:flex;
+            align-items: center;
+            justify-content:space-between;
+            h4{
+                text-transform: uppercase;
+                font-weight: bold;
+                border-left:5px solid #02e2cf;
+                padding-left:10px;
+            }
+            .viewall{
+                color:#02e2cf;
+                cursor: pointer;
+            }
+        }
+        .movies-thumnail{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom:30px;
+            .movie{
+                .cover-image{
+                    img {
+                        border-radius: 20px;
+                    }
+                }
+                .details{
+                    width:180px;
+                    .name{
+                        font-weight: bold;
+                        height:50px;
+                        margin-top:5px;
+                        cursor:pointer;
+                    }
+                }
+            }
+        }
+       
+    }
+    .popular-movies{
+        width:25%;
+        min-height:100vh;
+        padding:20px 40px;
+        font-family:'Roboto', sans-serif;
+        h4{
+            text-transform: uppercase;
+            font-weight: bold;
+            border-left:5px solid #02e2cf;
+            padding-left:10px;
+        }
+        .movies{
+            .movie{
+                margin-bottom:20px;
+                margin-top:30px;
+                /* display:flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap; */
+            }
+           
+        }
+        .viewall{
+            color:#02e2cf;
+            text-align: right;
+            margin-top:30px;
+            cursor:pointer;
+        }
+       
+    }
+    
+}
+
+
+.rating{
+    padding-right: 45px;
+    position:relative;
+    .rating-value{
+        position:absolute;
+        font-weight: bold;
+        /* top:2px; */
+        right:0px;
+    }
+}
